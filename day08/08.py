@@ -12,7 +12,8 @@ def create_map(data):
     return new_map
 
 
-def traverse_map(my_map, instructions, key='AAA'):
+def traverse_map(my_map, instructions):
+    key = 'AAA'
     index = 0
     count = 0
 
