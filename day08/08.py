@@ -98,7 +98,7 @@ def part2(data):
 def main(filename):
     with open(filename, 'r') as file:
         data = file.read()
-        # part1(data.split('\n\n'))
+        part1(data.split('\n\n'))
         part2(data.split('\n\n'))
 
 
