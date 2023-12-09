@@ -86,8 +86,8 @@ def part2(data):
     instructions = get_instructions(data[0])
     new_map = create_map(data[1])
     starting_keys = get_starting_keys(data[1])
-    steps_list = []
 
+    steps_list = []
     for key in starting_keys:
         steps_list.append(traverse_map_from_key(new_map, instructions, key))
 
@@ -98,8 +98,9 @@ def part2(data):
 def main(filename):
     with open(filename, 'r') as file:
         data = file.read()
-        part1(data.split('\n\n'))
-        part2(data.split('\n\n'))
+        temp = data.split('\n\n')
+        part1(temp)
+        part2(temp)
 
 
 if __name__ == '__main__':
