@@ -41,7 +41,7 @@ def traverse_map_from_key(my_map, instructions, key):
     index = 0
     count = 0
 
-    while key[-1] != 'Z':
+    while not key.endswith('Z'):
         instruction = instructions[index]
         if instruction == 'L':
             key = my_map[key][0]
