@@ -58,16 +58,12 @@ def main():
         seeds = seeds_and_ranges[0]
         ranges = seeds_and_ranges[1]
 
-        print(seeds)
-        print(ranges)
-
         locations = []
 
         for index, seed in enumerate(seeds):
             seed = int(seed)
             max_seed = seed + ranges[index]
             while seed < max_seed:
-                print(seed)
                 key = seed
                 for i in range(1, 8):
                     key = check_section(key, sections[i])
