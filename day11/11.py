@@ -1,5 +1,4 @@
 from itertools import combinations
-from collections import defaultdict
 
 
 def get_empty_cols(universe):
@@ -98,10 +97,6 @@ def get_galaxies(universe):
                 galaxies.append((r, c))
 
     return galaxies
-
-
-def def_value():
-    return 0
 
 
 def get_shortest_distance(pair):
